@@ -5,14 +5,14 @@ import javax.persistence.Id;
 
 import lombok.Data;
 
-
+@Data
 @Entity
 public class Employee {
 	@Id
 	private int empID;
 	private String eName;
 
-	public int getEmpID() {
+	/*public int getEmpID() {
 		return empID;
 	}
 
@@ -31,7 +31,7 @@ public class Employee {
 	public Employee() {
 		super();
 	}
-
+*/
 	@Override
 	public String toString() {
 		return "Employee [empID=" + empID + ", eName=" + eName + "]";
