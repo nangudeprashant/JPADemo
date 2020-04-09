@@ -12,8 +12,7 @@ import javax.persistence.spi.PersistenceProviderResolverHolder;
 //import antlr.collections.List;
 
 /**
- * Hello world!
- *
+ * @author JavaLive.com
  */
 public class App {
 	public static void main(String[] args) {
@@ -52,24 +51,5 @@ public class App {
 		/* Check whether enittiy is removed or not */
 		employee = em.find(Employee.class, 1);
 		System.out.println("Employee after removal :- " + employee);
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	}
 }
