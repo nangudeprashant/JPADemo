@@ -23,7 +23,8 @@ public class App {
 //		System.out.println(employee.toString());
 		PersistenceProviderResolver resolver = PersistenceProviderResolverHolder.getPersistenceProviderResolver();
 		java.util.List<PersistenceProvider> providers = resolver.getPersistenceProviders();
-		System.out.println(providers.toString());
+		System.out.println(providers.get(0).getClass());
+//		System.out.println(providers.toString());
 		
 		employee.setEmpID(22);
 		employee.seteName("OldName");

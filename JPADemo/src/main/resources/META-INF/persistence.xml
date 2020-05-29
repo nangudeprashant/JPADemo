@@ -12,7 +12,7 @@
 				value="org.hibernate.dialect.MySQLInnoDBDialect" /> -->
 
 			<property name="javax.persistence.jdbc.driver"
-				value="com.mysql.jdbc.Driver" />
+				value="com.mysql.cj.jdbc.Driver" />
 			<property name="javax.persistence.jdbc.url"
 				value="jdbc:mysql://localhost/test" />
 			<property name="javax.persistence.jdbc.user" value="root" />
