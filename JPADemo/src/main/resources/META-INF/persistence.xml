@@ -6,6 +6,7 @@
 	<persistence-unit name="customerManager"
 		transaction-type="RESOURCE_LOCAL">
 		<!-- <provider>org.hibernate.ejb.HibernatePersistence</provider> -->
+		<!-- We haven't provide name of any JPA provider therefore EclipseLink acts as default PA provider here -->
 		<class>com.jpademo.JPADemo.Employee</class>
 		<properties>
 			<!-- <property name="hibernate.dialect"
