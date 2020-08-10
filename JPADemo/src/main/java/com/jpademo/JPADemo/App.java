@@ -8,23 +8,17 @@ import javax.persistence.Persistence;
 import javax.persistence.spi.PersistenceProvider;
 import javax.persistence.spi.PersistenceProviderResolver;
 import javax.persistence.spi.PersistenceProviderResolverHolder;
-
-//import antlr.collections.List;
-
 /**
  * @author JavaLive.com
  */
 public class App {
 	public static void main(String[] args) {
-		//List providers=new LinkedList<PersistenceProvider>();
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("customerManager");
 		EntityManager em = emf.createEntityManager();
-		Employee employee = new Employee();//em.find(Employee.class, 1);
-//		System.out.println(employee.toString());
+		Employee employee = new Employee();
 		PersistenceProviderResolver resolver = PersistenceProviderResolverHolder.getPersistenceProviderResolver();
 		java.util.List<PersistenceProvider> providers = resolver.getPersistenceProviders();
 		System.out.println(providers.get(0).getClass());
-//		System.out.println(providers.toString());
 		
 		employee.setEmpID(22);
 		employee.seteName("OldName");
